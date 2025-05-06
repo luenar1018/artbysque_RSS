@@ -35,6 +35,7 @@ def generate_rss(category, posts):
             <title>{post['title']}</title>
             <link>{post['link']}</link>
             <pubDate>{post['date']}</pubDate>
+            <description><![CDATA[@1369387690608300114 📢 새로운 {category} 게시글이 올라왔습니다!]]></description>
         </item>
         """
 
@@ -61,3 +62,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
