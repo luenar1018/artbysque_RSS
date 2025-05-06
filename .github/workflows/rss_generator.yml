@@ -2,8 +2,11 @@ name: Generate RSS Feeds
 
 on:
   schedule:
-    - cron: '0 * * * *' 
+    - cron: '0 * * * *'  # 매 1시간마다 실행
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
